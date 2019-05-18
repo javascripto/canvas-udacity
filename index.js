@@ -49,6 +49,13 @@ image.onload = () => {
   // A matriz de transformação atual (rotação, dimensionamento, translação)
   // strokeStyle, fillStyle, font, globalAlpha, lineWidth, lineCap, lineJoin, miterLimit, shadowOffsetX, shadowOffsetY, shadowBlur, shadowColor, globalCompositeOperation, textAlign, textBaseline, A região de corte atual
 
+  ctx.font = "50px Arial";
+  ctx.strokeStyle = '#000';
+  ctx.fillStyle = '#fff';
+  ctx.lineWidth = 5;
+  ctx.strokeText('CANVAS MEME', 50, 400)
+  ctx.fillText('CANVAS MEME', 50, 400)
+
 
   const savedImage = canvas.toDataURL();
   // const blobImage = canvas.toBlob(blob => {

@@ -12,11 +12,19 @@ image.onload = () => {
   ctx.drawImage(image, 0, 0, w, h);
 
   const savedImage = canvas.toDataURL();
-  const blobImage = canvas.toBlob();
+  const blobImage = canvas.toBlob(blob => {
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob);
+    a.target = '_blank';
+    a.innerText = 'asd'
+    // a.click()
+    console.log(a);
+    document.body.appendChild(a)
+  });
 
   // window.open(savedImage)
   // window.open(blobImage)
-  console.log(savedImage);
+  // console.log(savedImage);
   console.log(blobImage);
 }
 

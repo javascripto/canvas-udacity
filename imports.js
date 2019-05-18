@@ -1,1 +1,1 @@
-export const imageUrl = 'https://image.freepik.com/fotos-gratis/a-imagem-macro-do-close-up-das-flores-e-usada-como-uma-imagem-de-fundo-foto-macro-close-up_34433-346.jpg';
+export const imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Alvorada_de_outono_na_Imagem_de_Minas.JPG';
